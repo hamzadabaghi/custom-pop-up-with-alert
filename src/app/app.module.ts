@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
-import { ScrollingModule } from '@angular/cdk/scrolling/scrolling-module';
+import { CustomPopUpModule } from './components/custom-pop-up.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, CustomPopUpModule],
   providers: [],
   bootstrap: [AppComponent],
 })
